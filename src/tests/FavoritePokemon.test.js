@@ -2,7 +2,6 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import renderWithRouter from '../renderWithRouter';
 import { FavoritePokemon } from '../pages';
-import pokemonList from '../data';
 
 describe('Testando página FavoritePokemon', () => {
   it('verifica se é exibido um título h2 co o texto "Favorite Pokémon"', () => {
