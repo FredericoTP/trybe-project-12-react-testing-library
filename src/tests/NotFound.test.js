@@ -11,7 +11,7 @@ describe('Testando página NotFound', () => {
     expect(notFoundTitle).toBeInTheDocument();
   });
 
-  it('', () => {
+  it('verifica se é exibida uma imagem com url expecífica', () => {
     renderWithRouter(<NotFound />);
 
     const notFoundImg = screen.getByRole('img', { name: /pikachu crying because the page requested was not found/i });
