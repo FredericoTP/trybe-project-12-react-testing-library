@@ -2,9 +2,11 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
-import { PokemonButtonsPanel } from '../components';
 import renderWithRouter from '../renderWithRouter';
 import pokemonList from '../data';
+
+const NAME_POKE = 'pokemon-name';
+const NEXT_POKE = 'next-pokemon';
 
 describe('Testando página Pokedex', () => {
   it('verifica se é exibido um título h2 co o texto "Encountered Pokémon"', () => {
@@ -19,11 +21,11 @@ describe('Testando página Pokedex', () => {
 
     renderWithRouter(<App />);
 
-    const pokemonName = screen.getByTestId('pokemon-name');
+    const pokemonName = screen.getByTestId(NAME_POKE);
     expect(pokemonName).toBeInTheDocument();
     expect(pokemonName).toHaveTextContent(pokemon[0]);
 
-    const btnNextPokemon = screen.getByTestId('next-pokemon');
+    const btnNextPokemon = screen.getByTestId(NEXT_POKE);
     expect(btnNextPokemon).toBeInTheDocument();
     expect(btnNextPokemon).toHaveTextContent('Próximo Pokémon');
 
@@ -76,11 +78,23 @@ describe('Testando página Pokedex', () => {
       userEvent.click(btnType);
 
       list.forEach((item) => {
-        const namePoke = screen.getByTestId('pokemon-name');
+        const namePoke = screen.getByTestId(NAME_POKE);
         expect(namePoke).toHaveTextContent(item.name);
-        const nextPoke = screen.getByTestId('next-pokemon');
+        const nextPoke = screen.getByTestId(NEXT_POKE);
         userEvent.click(nextPoke);
       });
     });
+  });
+
+  it('verifica o botão all', () => {
+    renderWithRouter(<App />);
+    const all = screen.getByRole('button', { name: /all/i });
+    const name = screen.getByTestId(NAME_POKE);
+    const next = screen.getByTestId(NEXT_POKE);
+    expect(name).toBeInTheDocument();
+    expect(name).toHaveTextContent('Pikachu');
+    userEvent.click(all);
+    userEvent.click(next);
+    expect(name).toHaveTextContent('Charmander');
   });
 });
