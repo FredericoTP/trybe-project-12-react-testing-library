@@ -175,6 +175,8 @@ Nesse projeto foi desenvolvido vários testes para uma aplicação React que já
 
 ## 100% :heavy_check_mark:
 
+![Project-React-Testing-Library-Grade](https://github.com/FredericoTP/trybe-project-12-react-testing-library/blob/main/images/react-testing-library-grade.png?raw=true)
+  
 <br />
 
 ## 3- Preview
