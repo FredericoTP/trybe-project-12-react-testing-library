@@ -1,10 +1,8 @@
-# :construction: README em construção ! :construction:
-
 # :computer: Trybe-12-Project-React-Testing-Library :computer:
 
 Nesse projeto foi desenvolvido vários testes para uma aplicação React que já está criada e configurada, utilizando Jest e a biblioteca React Testing Library.
 
-# Acesse o projeto clicando [aqui]()! :green_heart:
+# Acesse o projeto clicando [aqui](https://fredericotp.github.io/trybe-project-12-react-testing-library/)! :green_heart:
 
 <br />
 
@@ -180,3 +178,7 @@ Nesse projeto foi desenvolvido vários testes para uma aplicação React que já
 <br />
 
 ## 3- Preview
+  
+![Project-React-Testing-Library-Preview1](https://github.com/FredericoTP/trybe-project-12-react-testing-library/blob/main/images/react-testing-library-preview1.png?raw=true)
+![Project-React-Testing-Library-Preview2](https://github.com/FredericoTP/trybe-project-12-react-testing-library/blob/main/images/react-testing-library-preview2.png?raw=true)
+  
