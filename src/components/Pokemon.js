@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import star from '../services/star.png'
 
 import { pokemonType } from '../types';
 
@@ -20,14 +21,14 @@ class Pokemon extends React.Component {
           <p data-testid="pokemon-weight">
             Average weight: {value} {measurementUnit}
           </p>
-          {showDetailsLink && <Link to={ `/pokemon/${id}` }>More details</Link>}
+          {showDetailsLink && <Link to={`/pokemon/${id}`}>More details</Link>}
         </div>
-        <img src={ `${image}` } alt={ `${name} sprite` } />
+        <img src={`${image}`} alt={`${name} sprite`} />
         {isFavorite && (
           <img
             className="favorite-icon"
-            src={ `/star-icon.svg` }
-            alt={ `${name} is marked as favorite` }
+            src={star}
+            alt={`${name} is marked as favorite`}
           />
         )}
       </div>
