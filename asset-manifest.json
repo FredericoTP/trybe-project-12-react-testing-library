@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/trybe-project-12-react-testing-library/static/css/main.8b31612f.css",
-    "main.js": "/trybe-project-12-react-testing-library/static/js/main.6e086e0c.js",
+    "main.js": "/trybe-project-12-react-testing-library/static/js/main.acddcc65.js",
+    "static/media/star.png": "/trybe-project-12-react-testing-library/static/media/star.470dc43ffcc21c185f0d.png",
     "index.html": "/trybe-project-12-react-testing-library/index.html",
     "main.8b31612f.css.map": "/trybe-project-12-react-testing-library/static/css/main.8b31612f.css.map",
-    "main.6e086e0c.js.map": "/trybe-project-12-react-testing-library/static/js/main.6e086e0c.js.map"
+    "main.acddcc65.js.map": "/trybe-project-12-react-testing-library/static/js/main.acddcc65.js.map"
   },
   "entrypoints": [
     "static/css/main.8b31612f.css",
-    "static/js/main.6e086e0c.js"
+    "static/js/main.acddcc65.js"
   ]
 }
