@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/trybe-project-12-react-testing-library/static/css/main.8b31612f.css",
+    "main.js": "/trybe-project-12-react-testing-library/static/js/main.6e086e0c.js",
+    "index.html": "/trybe-project-12-react-testing-library/index.html",
+    "main.8b31612f.css.map": "/trybe-project-12-react-testing-library/static/css/main.8b31612f.css.map",
+    "main.6e086e0c.js.map": "/trybe-project-12-react-testing-library/static/js/main.6e086e0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b31612f.css",
+    "static/js/main.6e086e0c.js"
+  ]
+}
