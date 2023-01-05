@@ -14,19 +14,19 @@ class FavoritePokemon extends React.Component {
     const isEmpty = pokemonList.length === ZERO;
 
     return (
-      <div>
+      <div className="pokemon-favoriteList">
         <h2>Favorite Pokémon</h2>
-        { isEmpty ? (
+        {isEmpty ? (
           <div>
-            <p>{ `No favorite Pokémon found` }</p>
+            <p>{`No favorite Pokémon found`}</p>
           </div>
         ) : (
           pokemonList.map((pokemon) => (
-            <div key={ pokemon.id } className="favorite-pokemonList">
-              <Pokemon pokemon={ pokemon } isFavorite />
+            <div key={pokemon.id} className="favorite-pokemonList">
+              <Pokemon pokemon={pokemon} isFavorite />
             </div>
           ))
-        ) }
+        )}
       </div>
     );
   }

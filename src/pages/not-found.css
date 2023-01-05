@@ -3,6 +3,10 @@
   width: 70%;
 }
 
+.not-found h2 {
+  margin: 20px 0;
+}
+
 .not-found-image {
   max-width: 50%;
   width: 100%;

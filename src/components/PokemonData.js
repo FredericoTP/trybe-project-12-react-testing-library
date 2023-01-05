@@ -8,19 +8,19 @@ class PokemonData extends Component {
 
     return (
       <>
-        <section>
-          <h2>{ `Summary` }</h2>
-          <p>{ `${summary}` }</p>
+        <section className="pokemon-summary">
+          <h2>{`Summary`}</h2>
+          <p>{`${summary}`}</p>
         </section>
-        <section>
-          <h2>{ `Game Locations of ${name}` }</h2>
+        <section className="pokemon-locations">
+          <h2>{`Game Locations of ${name}`}</h2>
           <div className="pokemon-habitat">
-            { foundAt.map(({ location, map }) => (
-              <div key={ location }>
-                <img src={ `${map}` } alt={ `${name} location` } />
-                <p><em>{ location }</em></p>
+            {foundAt.map(({ location, map }) => (
+              <div key={location} className="location">
+                <img src={`${map}`} alt={`${name} location`} />
+                <p><em>{location}</em></p>
               </div>
-            )) }
+            ))}
           </div>
         </section>
       </>

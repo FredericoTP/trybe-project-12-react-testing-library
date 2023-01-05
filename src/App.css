@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -5,4 +10,37 @@
 .link {
   margin-left: 20px;
   margin-right: 20px;
+  border: 2px solid white;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.link:hover {
+  background-color: orange;
+}
+
+.header-navigation {
+  background-color: black;
+}
+
+.header-navigation h1 {
+  color: white;
+  padding: 20px 0;
+}
+
+.header-navigation nav {
+  padding: 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and ( max-width : 391px ) {
+  .link {
+    margin-top: 10px;
+  }
 }

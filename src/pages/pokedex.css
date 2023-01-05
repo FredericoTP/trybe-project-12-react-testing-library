@@ -4,15 +4,25 @@
   flex-flow: column wrap;
 }
 
+.pokedex h2 {
+  margin: 20px 0 0;
+}
+
 .pokedex-buttons-panel {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 0 20px;
 }
 
 .pokedex-button {
   background-color: green;
   height: 50px;
   width: 100px;
+}
+
+.pokedex-button:hover {
+  background-color: darkgreen;
 }
 
 .pokedex-button:disabled {
@@ -24,4 +34,8 @@
   height: 50px;
   margin: 10px;
   width: 80px;
+}
+
+.filter-button:hover {
+  background-color: coral;
 }

@@ -39,16 +39,18 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Pokédex</h1>
-        <nav>
-          <Link className="link" to="/">{`Home`}</Link>
-          <Link className="link" to="/about">{`About`}</Link>
-          <Link className="link" to="/favorites">{`Favorite Pokémon`}</Link>
-        </nav>
+        <div className="header-navigation">
+          <h1>Pokédex</h1>
+          <nav>
+            <Link className="link" to="/">{`Home`}</Link>
+            <Link className="link" to="/about">{`About`}</Link>
+            <Link className="link" to="/favorites">{`Favorite Pokémon`}</Link>
+          </nav>
+        </div>
         <Routes
-          favoritePokemon={ favoritePokemon }
-          pokemonList={ pokemonList }
-          isPokemonFavoriteById={ isPokemonFavoriteById }
+          favoritePokemon={favoritePokemon}
+          pokemonList={pokemonList}
+          isPokemonFavoriteById={isPokemonFavoriteById}
           onUpdateFavoritePokemon={
             (pokemonId, checked) => this.onUpdateFavoritePokemon(pokemonId, checked)
           }

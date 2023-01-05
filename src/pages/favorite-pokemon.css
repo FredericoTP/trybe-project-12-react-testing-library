@@ -1,3 +1,7 @@
+.pokemon-favoriteList h2 {
+  margin: 20px 0 0;
+}
+
 .favorite-pokemonList {
   display: flex;
   flex-wrap: wrap;
